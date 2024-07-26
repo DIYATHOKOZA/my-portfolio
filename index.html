@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thokoza portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/73cd73023c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Thokoza Diya</span></h1>
+            <p>I'm a recent IT graduate from Walter Sisulu University. I have a passion for software development and networks.
+            During my studies, I developed a strong foundation in programming, web development, and database management.
+            I enjoy solving complex problems and am always eager to learn new technologies. I'm currently seeking opportunities to apply
+            my skills in a professional environment.</p>
+        </div>
+    </div>
+</div>
+<!-------------About-------------------->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/img.png" alt="About Image">
+                        </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><i class="fas fa-paint-brush"></i> <span>Windows/UI/UX</span><br>Design web/app interfaces</li>
+                        <li><i class="fab fa-html5"></i> HTML</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-react"></i> React.js</li>
+                        <li><i class="fab fa-node-js"></i> Node.js</li>
+                        <li><i class="fas fa-code-branch"></i> Git, VS Code</li>
+                        <li><i class="fas fa-laptop-code"></i> <span>Web App Development</span><br>Python, Tkinter GUI</li>
+                        <li><i class="fas fa-mobile-alt"></i> <span>Chat-App Development</span><br>Building Android/iOS Apps/Windows</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Current</span><br>Software Development learnership at Capaciti</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Advanced Diploma in ICT - Communication Networks</li>
+                        <li><span>2020</span><br>National Diploma in Information Technology</li>
+                        <li><span>2016</span><br>National Vocational Certificate Level 4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------ Projects -------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div class="project-item">
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p><strong>Description:</strong> A web application for an online shopping
+                platform with user authentication, product browsing, and a shopping cart.</p>
+                <p><strong>Technologies Used:</strong> html, css, and JavaScript</p>
+                <p><strong>Role:</strong> developer responsible for building the front-end 
+                interface and integrating the back-end API.</p>
+                <p><strong>GitHub Repository:</strong> <a href="https://github.com/DIYATHOKOZA/shopping-cart">Online Shopping Cart</a></p>
+                <a href="#ONLINE shopping-cart">Learn More</a>
+                <P><strong>ONLINE shopping-cart:</strong><a href="https://mkfashionpage.netlify.app/"></a></P>
+            </div>
+            <div class="project-item">
+                <i class="fa-brands fa-python"></i>
+                <h2>App Design</h2>
+                <p><strong>Description:</strong> A Banking application for managing bank accounts, including features for
+                deposits, withdrawals, and transaction history.</p>
+                <p><strong>Technologies Used:</strong> Python, Tkinter,textfile and jsonfile</p>
+                <p><strong>Role:</strong> Lead developer responsible for designing the GUI and 
+                implementing core functionalities.</p>
+                <p><strong>GitHub Repository:</strong> <a href="https://github.com/DIYATHOKOZA/banking-app">Banking Application</a></p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="project-item">
+                <i class="fa-brands fa-react"></i>
+                <h2>Web Development</h2>
+                <p><strong>Description:</strong> A chat application for monitoring chats, and providing fitness tips.</p>
+                <p><strong>Technologies Used:</strong> React.js, node.js and javascript</p>
+                <p><strong>Role:</strong> Chat-app developer responsible for creating the interactivity of the chat app using
+                technologies like react.js, node.js and JavaScriptthe user interface and integrating Firebase for authentication and data storage.</p>
+                <p><strong>GitHub Repository:</strong> <a href="https://github.com/DIYATHOKOZA/chat-app">chat-App</a></p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------- Contacts ------->
+<div id="contacts">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <section>
+            <h2>Contact</h2>
+            <div class="contact-left">
+                <p><i class="fas fa-phone"></i> 0631001045</p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:diyathokoza@gmail.com">diyathokoza@gmail.com</a></p>
+                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/thokoza-diya-735993204">linkedin.com/in/ThokozaDiya</a></p>
+                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/DIYATHOKOZA">github.com/DIYATHOKOZA</a></p>
+                <p><i class="fas fa-briefcase"></i> Portfolio: <a href="https://diyathokoza.tech">diyathokoza.tech</a></p>
+                <p><i class="fas fa-file-download"></i> Resume: <a href="path/document/main profile/DIYA-T-cpt.pdf" download>Download Resume</a></p>
+            </div>
+        </section>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+function openTab(tabName) {
+    var i, tabContent, tabLinks;
+
+    // Hide all tab content
+    tabContent = document.getElementsByClassName("tab-contents");
+    for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+    }
+
+    // Remove the active class from all tab links
+    tabLinks = document.getElementsByClassName("tab-links");
+    for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove("active-link");
+    }
+
+    // Show the selected tab content and add the active class to the clicked tab link
+    document.getElementById(tabName).style.display = "block";
+    event.currentTarget.classList.add("active-link");
+}
+
+// By default, display the first tab content
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("skills").style.display = "block";
+});
+
+
+</script>
+</body>
+</html>

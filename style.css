@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+background: #080808;
+color: #fff;
+}
+#header{
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-color: #080808;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    float: right;
+    align-items: right;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 180px;
+    margin: 70px;
+    float: left;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 15%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 10px;
+}
+.header-text h1 span{
+    color: #ff004f;
+
+}
+
+/*---------about---------*/
+#about{
+    padding: 0px 0;
+    color: #ababab;
+    margin: 50px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 20px;
+    
+}
+.tab-titles{
+    display: flex;
+    margin: 10px 0 0px;
+    font-size: 18px;
+}
+.tab-links{
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style:none;
+    margin: 0px 0;
+}
+
+.tab-contents ul li span{
+    display: inline-block;
+    color: #b54769;
+    font-size: 22px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.tab-contents.active-tab{
+    display: block;
+}
+.projects{
+    padding: 30px 0;
+}
+.projects-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.projects-list div {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    flex-basis: calc(33.333%-20px);/*adjust the width to fit three items per row wit margins*/
+}
+
+.projects-list h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.projects-list p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.projects-list a {
+    color: #ff004f;
+    text-decoration: none;
+    font-weight: 600;
+}
+.projects-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s,;
+}
+.projects-list div i{
+    font-size: 50px;
+    margin: 30px;
+}
+.projects-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.projects-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.projects-list div:hover{
+    background: #ff004f;
+}
+
+/*-----contact----*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icon{
+    margin: 30px;
+}
+.social-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#080808 ;
+    display: inline-block;
+}
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #080808;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .sub-title {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .about-me {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: right; /* Align text to the right */
+    margin-top: 20px; /* Add margin top for spacing */
+}
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .project-item {
+    flex: 1 1 calc(33.333% - 40px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .project-item i {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+  }
+  
+  .project-item h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .project-item p {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .project-item a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .project-item a:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .project-item {
+      flex: 1 1 calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-item {
+      flex: 1 1 100%;
+    }
+  }
+  .contact-right {
+    max-width: 600px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 70;
+    
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+button {
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
