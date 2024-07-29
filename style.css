@@ -79,14 +79,12 @@ nav ul li a:hover::after{
 }
 .row{
     display: flex;
-    
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .about-col-1{
     flex-basis: 35%;
 }
-
 .about-col-1 img{
     width: 80%;
     border-radius: 15px;
@@ -108,6 +106,7 @@ nav ul li a:hover::after{
     margin: 10px 0 0px;
     font-size: 18px;
     flex-wrap: wrap;
+    
 }
 .tab-links{
     flex: 1rem;
@@ -117,6 +116,7 @@ nav ul li a:hover::after{
     font-weight: 100;
     cursor: pointer;
     position: relative;
+    
 }
 .tab-links::after{
     content: '';
