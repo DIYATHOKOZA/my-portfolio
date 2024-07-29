@@ -370,4 +370,19 @@ button:hover {
     color: green;
     border-radius: 5px;
 }
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack columns vertically */
+    }
 
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%; /* Full width for each column */
+        margin-top: 20px; /* Add space between columns */
+    }
+
+    .about-col-1 img {
+        width: 100%; /* Full width for image */
+    }
+}
