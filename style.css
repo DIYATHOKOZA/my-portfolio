@@ -16,20 +16,16 @@ color: #fff;
     background-position: center;
 }
 .container{
-    padding: 10px 10%;
+    padding: 10px 5%;
 }
 nav{
     display: flex;
     float: right;
-    align-items: right;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
-    width: 180px;
-    margin: 70px;
-    float: left;
-}
+
 nav ul{
     display: flex;
     align-items: center;
@@ -60,10 +56,10 @@ nav ul li a:hover::after{
 }
 .header-text{
     margin-top: 15%;
-    font-size: 30px;
+    font-size: 30px; /*adjust font size*/
 }
 .header-text h1{
-    font-size: 60px;
+    font-size: 60px; /*adjust font size*/
     margin-top: 10px;
 }
 .header-text h1 span{
