@@ -73,12 +73,13 @@ nav ul li a:hover::after{
 
 /*---------about---------*/
 #about{
-    padding: 0px 0;
+    padding: 20px 0;
     color: #ababab;
     margin: 50px;
 }
 .row{
     display: flex;
+    
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -87,7 +88,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1 img{
-    width: 100%;
+    width: 80%;
     border-radius: 15px;
     height: auto;
 }
@@ -109,15 +110,13 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 .tab-links{
-    flex: 1;
+    flex: 1rem;
     padding: 10px;
-    margin: 5px;
-    text-align: center;
+    margin: 5px 0;
     font-size: 30px;
     font-weight: 100;
     cursor: pointer;
     position: relative;
-    border: 1px solid #ddd;
 }
 .tab-links::after{
     content: '';
@@ -144,12 +143,6 @@ nav ul li a:hover::after{
 }
 .tab-contents{
     display: none;
-}
-.active-tab {
-    display: block;
-}
-.active-link {
-    background-color: #f1f1f1;
 }
 .tab-contents.tab-contents.active-tab{
     display: block;
