@@ -89,6 +89,7 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    height: auto;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -105,13 +106,18 @@ nav ul li a:hover::after{
     display: flex;
     margin: 10px 0 0px;
     font-size: 18px;
+    flex-wrap: wrap;
 }
 .tab-links{
-    margin: 20px;
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
     font-size: 30px;
     font-weight: 100;
     cursor: pointer;
     position: relative;
+    border: 1px solid #ddd;
 }
 .tab-links::after{
     content: '';
@@ -139,8 +145,19 @@ nav ul li a:hover::after{
 .tab-contents{
     display: none;
 }
+.active-tab {
+    display: block;
+}
+.active-link {
+    background-color: #f1f1f1;
+}
 .tab-contents.tab-contents.active-tab{
     display: block;
+}
+@media (max-width: 768px) {
+    .about-col-2 {
+        margin-top: 20px;
+    }
 }
 .projects{
     padding: 30px 0;
