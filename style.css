@@ -21,7 +21,8 @@ body{
 }
 .container{
     padding: 10px 5%;
-    width: 90%;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
 }
 nav{
@@ -30,6 +31,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 20px 0;
 }
 .nav-menu {
     list-style: none;
@@ -82,13 +84,32 @@ nav ul li a:hover::after{
 }
 /* For tablets and small screens */
 @media (max-width: 768px) {
-    ul.nav-menu {
+    .nav-menu {
         display: none; /* Hide menu by default */
         flex-direction: column;
         width: 100%;
         background: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border: 1px solid #ddd;
+        z-index: 100;
     }
-
+    .nav-toggle {
+        display: none;
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .nav-menu {
+        display: flex;
+        list-style: none;
+    }
+    .nav-menu a {
+        text-decoration: none;
+        color: #000;
+    }
     ul.nav-menu.active {
         display: flex; /* Show menu when active */
     }
@@ -309,7 +330,10 @@ nav ul li a:hover::after{
     margin: 10px;
     flex-basis: calc(33.333%-20px);/*adjust the width to fit three items per row wit margins*/
 }
-
+.project-item {
+    width: 48%;
+    margin-bottom: 20px;
+}
 .projects-list h2 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -352,7 +376,11 @@ nav ul li a:hover::after{
 .projects-list div:hover{
     background: #ff004f;
 }
-
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%;
+    }
+}
 /*-----contact----*/
 .contact-left{
     flex-basis: 35%;

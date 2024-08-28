@@ -67,6 +67,10 @@ navToggle.addEventListener('click', function () {
     console.log('Toggle clicked');
     navMenu.classList.toggle('active');
 });
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    document.getElementById('nav-menu').classList.toggle('show');
+});
+
 
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
