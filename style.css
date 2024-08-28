@@ -10,7 +10,6 @@ body{
     padding: 0;
     background: #080808;
     color: #fff;
-
 }
 #header{
     width: 100%;
@@ -22,9 +21,10 @@ body{
 .container{
     padding: 10px 5%;
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 12000px;
+    margin: 0 auto;
 }
+
 nav{
     display: flex;
     float: right;
@@ -379,10 +379,7 @@ nav ul li a:hover::after{
         align-items: center;
     }
 }
-    .project-item {
-        width: 80%;
-        flex-basis: calc(33.333%-20px);/*adjust the width to fit three items per row wit margins*/
-    }
+    
 .projects-list a {
     color: #ff004f;
     text-decoration: none;
@@ -448,23 +445,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 /* Resetting default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #080808;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
+ 
   .sub-title {
     text-align: center;
     margin-bottom: 0px;
