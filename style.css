@@ -351,6 +351,7 @@ nav ul li a:hover::after{
     font-size: 16px;
     margin-bottom: 10px;
 }
+
 .project-item p {
     font-size: 16px;
     line-height: 1.6;
@@ -362,7 +363,11 @@ nav ul li a:hover::after{
     display: inline-block;
     margin-top: 10px;
 }
-
+.project-item h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: justify; /* Aligns text with full justification */
+}
 .project-item a:hover {
     text-decoration: underline;
 }
@@ -376,6 +381,7 @@ nav ul li a:hover::after{
 }
     .project-item {
         width: 80%;
+        flex-basis: calc(33.333%-20px);/*adjust the width to fit three items per row wit margins*/
     }
 .projects-list a {
     color: #ff004f;
