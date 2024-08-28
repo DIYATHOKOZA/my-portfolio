@@ -325,6 +325,7 @@ nav ul li a:hover::after{
 }
 .projects{
     padding: 30px 0;
+    background: #181818;
 }
 .projects-list{
     display: flex;
@@ -340,10 +341,7 @@ nav ul li a:hover::after{
     margin: 10px;
     flex-basis: calc(33.333%-20px);/*adjust the width to fit three items per row wit margins*/
 }
-.project-item {
-    width: 48%;
-    margin-bottom: 20px;
-}
+
 .projects-list h2 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -353,7 +351,32 @@ nav ul li a:hover::after{
     font-size: 16px;
     margin-bottom: 10px;
 }
+.project-item p {
+    font-size: 16px;
+    line-height: 1.6;
+}
 
+.project-item a {
+    color: #ff004f;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .projects-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    .project-item {
+        width: 80%;
+    }
 .projects-list a {
     color: #ff004f;
     text-decoration: none;
