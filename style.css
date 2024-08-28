@@ -5,8 +5,12 @@
     box-sizing: border-box;
 }
 body{
-background: #080808;
-color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #080808;
+    color: #fff;
+
 }
 #header{
     width: 100%;
@@ -17,6 +21,8 @@ color: #fff;
 }
 .container{
     padding: 10px 5%;
+    width: 90%;
+    margin: auto;
 }
 nav{
     display: flex;
