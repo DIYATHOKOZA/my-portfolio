@@ -24,6 +24,7 @@ body{
     max-width: 12000px;
     margin: 0 auto;
 }
+
 nav{
     display: flex;
     float: right;
@@ -40,6 +41,7 @@ nav{
     justify-content: space-around;
     transition: transform 0.3s ease;
 }
+
 nav ul{
     display: flex;
     align-items: center;
@@ -52,7 +54,7 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 40px;/* Adjust for mobile screens */
+    font-size: 40px;
     position: relative;
 }
 nav ul li a::after{
@@ -100,12 +102,7 @@ nav ul li a:hover::after{
         font-size: 24px;
         cursor: pointer;
     }
-    @media (max-width: 768px) {
-        .nav-toggle {
-            display: block; /* Show on smaller screens */
-            font-size: 30px;
-            color: white;
-        }
+    
     .nav-menu a {
         text-decoration: none;
         color: #f80808;
@@ -113,15 +110,18 @@ nav ul li a:hover::after{
     ul.nav-menu.active {
         display: flex; /* Show menu when active */
     }
+
     ul.nav-menu li {
         margin: 0;
         text-align: center;
     }
+
     ul.nav-menu a {
         padding: 15px;
         color: #fff;
         display: block;
     }
+
     .nav-toggle {
         display: block; /* Show hamburger menu icon */
         font-size: 1.5rem;
@@ -131,13 +131,16 @@ nav ul li a:hover::after{
     ul.nav-menu.active {
         display: flex; /* Or any other display value */
     }
+    
     .header-text h1 {
         font-size: 2rem;
     }
+
     .header-text p {
         font-size: 1rem;
     }
 }
+
 /* For mobile screens */
 @media (max-width: 480px) {
     .header-text h1 {
@@ -148,6 +151,7 @@ nav ul li a:hover::after{
         font-size: 0.9rem;
     }
 }
+
 /*---------about---------*/
 #about{
     padding: 20px 0;
@@ -195,8 +199,10 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
-    margin-top: 20px;  
+    margin-top: 20px;
+    
 }
+
 #about .tab-contents ul li span {
     font-weight: bold;
     margin-bottom: 5px;
@@ -206,6 +212,7 @@ nav ul li a:hover::after{
     margin: 10px 0 0px;
     font-size: 18px;
     flex-wrap: wrap;
+    
 }
 .tab-links{
     flex: 1rem;
@@ -215,6 +222,7 @@ nav ul li a:hover::after{
     font-weight: 100;
     cursor: pointer;
     position: relative;
+    
 }
 .tab-links::after{
     content: '';
@@ -233,6 +241,7 @@ nav ul li a:hover::after{
     list-style:none;
     margin: 0px 0;
 }
+
 .tab-contents ul li span{
     display: inline-block;
     color: #b54769;
@@ -252,6 +261,7 @@ nav ul li a:hover::after{
     padding: 0;
     margin: 0;
 }
+
 .skills-grid li {
     background-color: #f9f9f9; /* Light background for each grid item */
     padding: 15px;
@@ -259,19 +269,23 @@ nav ul li a:hover::after{
     text-align: center; /* Center-align the content */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
+
 .skills-grid li i {
     font-size: 24px; /* Icon size */
     margin-bottom: 10px; /* Space below the icon */
     color: #333; /* Icon color */
 }
+
 .skills-grid li span {
     font-weight: bold; /* Bold text for the span */
     display: block;
     margin-top: 10px; /* Space above the span */
 }
+
 .skills-grid li br {
     margin-bottom: 5px; /* Space below the line break */
 }
+
 @media (max-width: 768px) {
     .about-col-2 {
         margin-top: 20px;
@@ -291,6 +305,7 @@ nav ul li a:hover::after{
         font-size: 1.5em;
     }
 }
+
 @media (max-width: 480px) {
     .header-text h1 {
         font-size: 2rem;
@@ -318,6 +333,7 @@ nav ul li a:hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .projects-list div {
     background: #222;
     padding: 20px;
@@ -559,7 +575,7 @@ button:hover {
     .row {
         flex-direction: column; /* Stack columns vertically */
     }
-}
+
     .about-col-1,
     .about-col-2 {
         flex-basis: 100%; /* Full width for each column */
