@@ -54,7 +54,7 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 40px;/* Adjust for mobile screens */
     position: relative;
 }
 nav ul li a::after{
@@ -102,7 +102,12 @@ nav ul li a:hover::after{
         font-size: 24px;
         cursor: pointer;
     }
-    
+    @media (max-width: 768px) {
+        .nav-toggle {
+            display: block; /* Show on smaller screens */
+            font-size: 30px;
+            color: white;
+        }
     .nav-menu a {
         text-decoration: none;
         color: #f80808;
@@ -296,12 +301,15 @@ nav ul li a:hover::after{
     body {
         font-size: 16px;
     }
-
+    @media (max-width: 768px) {
+        #header {
+            height: 50vh; /* Adjusted height for mobile screens */
+        }
+    }
     .sub-title {
         font-size: 1.5em;
     }
 }
-
 @media (max-width: 480px) {
     .header-text h1 {
         font-size: 2rem;
@@ -442,7 +450,6 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 /* Resetting default styles */
- 
   .sub-title {
     text-align: center;
     margin-bottom: 0px;
@@ -460,7 +467,6 @@ nav ul li a:hover::after{
     justify-content: space-around;
     gap: 20px;
   }
-  
   .project-item {
     flex: 1 1 calc(33.333% - 40px);
     background-color: #fff;
@@ -487,7 +493,6 @@ nav ul li a:hover::after{
     margin-bottom: 10px;
     text-align: left;
   }
-  
   .project-item a {
     display: inline-block;
     margin-top: 20px;
@@ -497,7 +502,6 @@ nav ul li a:hover::after{
     border-radius: 5px;
     text-decoration: none;
   }
-  
   .project-item a:hover {
     background-color: #45a049;
   }
@@ -575,7 +579,7 @@ button:hover {
     .row {
         flex-direction: column; /* Stack columns vertically */
     }
-
+}
     .about-col-1,
     .about-col-2 {
         flex-basis: 100%; /* Full width for each column */
