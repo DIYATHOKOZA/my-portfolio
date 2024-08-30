@@ -7,32 +7,39 @@
     <title>Thokoza portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/73cd73023c.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <button class="nav-toggle">
-                <i class="fas fa-bars"></i>  
-            </button>
-             <!-- Hamburger menu icon -->
-            <ul id="nav-menu" class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contact</a></li>
-            </ul>
+    <header class="header">
+        <a href="images/logo.jpg" class="logo">SOFTWARE DEVELOPER</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
-        <div class="header-text">
-            <p>Software Developer</p>
-            <h1>Hi, I'm <span>Thokoza Diya</span></h1>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+       
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Thokoza Diya</h1>
             <p>I'm a recent IT graduate from Walter Sisulu University. I have a passion for software development and networks.
-            During my studies, I developed a strong foundation in programming, web development, and database management.
-            I enjoy solving complex problems and am always eager to learn new technologies. I'm currently seeking opportunities to apply
-            my skills in a professional environment.</p>
+                During my studies, I developed a strong foundation in programming, web development, and database management.
+                I enjoy solving complex problems and am always eager to learn new technologies. I'm currently seeking opportunities to apply
+                my skills in a professional environment.</p>
+        <div class="social-media">
+            <a href="https://github.com/DIYATHOKOZA"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/thokoza-diya-735993204"><i class='bx bxl-linkedin'></i></a>
         </div>
+        <a href="DIYA-T_CV Template_CPT docx.pdf" class="btn">Download CV</a>
     </div>
-</div>
+    </div>
+
 <!-------------About-------------------->
             <div id="about">
                 <div class="container">
@@ -153,32 +160,62 @@
     </div>
 </div>
 <!-------------- Contacts ------->
-<div id="contacts">
-    <div class="container">
-        <h1 class="sub-title">Contact Me</h1>
-        <section>
-            <h2>Contact</h2>
-            <div class="contact-left">
-                <p><i class="fas fa-phone"></i> 0631001045</p>
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:diyathokoza@gmail.com">diyathokoza@gmail.com</a></p>
-                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/thokoza-diya-735993204">linkedin.com/in/ThokozaDiya</a></p>
-                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/DIYATHOKOZA">github.com/DIYATHOKOZA</a></p>
-                <p><i class="fas fa-briefcase"></i> Portfolio: <a href="https://my-portfolio-rho-olive-41.vercel.app/">T_DIYA.my-portfolio</a></p>
-                <a href="cv.pdf" download="Thokoza-Diya-Portfolio.pdf"><i class="fas fa-file-pdf"></i> Download Portfolio PDF</a>
-
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><i class='bx bx-phone' ><strong>Phone:</strong> +27 63 100 1045</i></p>
+            <p><i class='bx bxs-envelope' ><strong>Email:</strong> diyathokoza@gmail.com</i></p>
+            <p><i class='bx bx-current-location'><strong>Address:</strong> Winnie Mandela street Capetown Langa, 7455</i></p>
+        </div>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Full Name cannot be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Address" id="email"
+                    class="item" autocomplete="off">
+                    <div class="error-txt email">Email Address cannot be blank</div>
+                </div>
             </div>
-        </section>
-        <div class="contact-right">
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="4" placeholder="Your Message"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-            <div id="successMessage" class="hidden">Your message has been sent successfully!</div>
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="phone"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Phone Number cannot be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Subject cannot be blank</div>
+                </div>
+            </div>
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10"
+                placeholder="Your Message" class="item"
+                autocomplete="off"></textarea>
+                <div class="error-txt">Message cannot be blank</div>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!--===============Footer design==========-->
+
+<footer class="footer">
+    <div class="footer-text">
+        <p>Coptright &copy;2024 by Thokoza Diya | All Rights Reserved</p>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </div>
-</div>
+</footer>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script>
 function openTab(tabName) {
     var i, tabContent, tabLinks;
