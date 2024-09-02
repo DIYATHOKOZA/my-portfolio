@@ -139,7 +139,6 @@ if (darkModeIcon) {
     });
 }
 
-
 /*======== scroll reveal ====*/
 ScrollReveal({
     distance: '80px',

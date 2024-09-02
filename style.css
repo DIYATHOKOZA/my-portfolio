@@ -34,7 +34,8 @@ body{
     color: #fff;
 }
 .header {
-    position: fixed;
+    position:sticky;
+    justify-content: space-between;
     top: 0;
     left: 0;
     width: 100%;
@@ -61,10 +62,11 @@ body{
 .navbar a {
     position: relative;
     font-size: 1.7rem;
-    color: var(--white-color); 
+    color: #fff; 
     font-weight: 500;
     margin-right: 3.5rem;
-    text-decoration: none; 
+    text-decoration: none;
+    transition: color 0.3s ease; 
 }
 
 .header.sticky .navbar a {
@@ -74,8 +76,21 @@ body{
 .header.sticky .navbar a.active {
     color: white; 
 }
-
+.navbar a:hover,
+.navbar a.active {
+    color: #f80808; /* Change color on hover or when active */
+}
 .navbar a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 0.2rem;
+    visibility: hidden;
+    background: #f80808;
+}
+.navbar a.active::after {
     content: '';
     position: absolute;
     left: 0;
@@ -84,7 +99,6 @@ body{
     height: 0.2rem;
     background: #f80808;
 }
-
 .header.sticky .navbar a::before {
     background: var(--main-color); 
     opacity: 0.7;
