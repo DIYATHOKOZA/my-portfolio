@@ -53,12 +53,11 @@ body{
 
 .logo {
     font-size: 2.5rem;
-    color: white;
+    color: #ff004f;
     font-weight: 600;
     cursor: default;
     margin-right: auto;
 }
-
 .navbar a {
     position: relative;
     font-size: 1.7rem;
@@ -210,9 +209,6 @@ body{
         transform: rotate(-360deg);
     }
 }
-
-
-
 
 .header-text{
     margin-top: 15%;
@@ -472,28 +468,6 @@ body{
     padding: 30px 0;
     background: #181818;
 }
-.projects-list{
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-radius: 2rem;
-    gap: 20px;
-}
-
-.projects-list div {
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 10px;
-    flex-basis: calc(33.333%-20px);/*adjust the width to fit three items per row wit margins*/
-}
-
-.projects-list h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
 
 .projects-list p {
     font-size: 16px;
@@ -511,11 +485,7 @@ body{
     display: inline-block;
     margin-top: 10px;
 }
-.project-item h2 {
-    font-size: 24px;
-    margin: 10px 0;
-    text-align: justify; /* Aligns text with full justification */
-}
+
 .project-item a:hover {
     text-decoration: underline;
 }
