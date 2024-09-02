@@ -649,10 +649,13 @@ body{
     margin-top: 20px;
   }
   .project-item {
+    display: flex;
     position: relative;
+    box-sizing: border-box;
     flex: 1 1 calc(33.333% - 40px);
     background-color: #fff;
     padding: 5px;
+    flex-direction: column;
     margin: 10px auto; /* Centering items */
     border-radius: 8px;
     text-align: center;
