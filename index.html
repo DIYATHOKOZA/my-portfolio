@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thokoza portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/73cd73023c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -18,9 +20,8 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-
         <div class="bx bx-moon" id="darkMode-icon"></div>
-
+        
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
        
@@ -156,6 +157,32 @@
         </div>
     </div>
 </div>
+<!-------SUPPORTING DOCUMENTS-->
+<div class="Documents-container">
+    <h2 class="heading">Supporting Documents</h2>
+    <div class="Document-wrapper">
+        <div class="Document-box mySwiper">
+            <div class="Document-content swiper-wrapper">
+                <div class=" swiper-slide">
+                    <h3>completion letter</h3>
+                    <a href="confirmation_advanced.pdf" class="Document-slide-link">completion letter</a>
+                </div>
+                <div class="swiper-slide">
+                    <h3>soft Skills</h3>
+                    <a href="Thokoza Diya - SoftSkills Certificate.pdf" class="Document-slide-link">soft skills</a>
+                </div>
+                <div class="swiper-slide">
+                <h3>CCNA & CCNA SECURITY Transcript</h3>
+                    <a href="NetAcad_Learning_Transcript(0).pdf" class="Document-slide-link">CCNA & CCNA SECURITY Transcript</a>     
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+
 <!-------------- Contacts ------->
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
@@ -213,32 +240,7 @@
     </div>
 </footer>
 <script src="https://unpkg.com/scrollreveal"></script>
-<script>
-function openTab(tabName) {
-    var i, tabContent, tabLinks;
-
-    // Hide all tab content
-    tabContent = document.getElementsByClassName("tab-contents");
-    for (i = 0; i < tabContent.length; i++) {
-        tabContent[i].style.display = "none";
-    }
-
-    // Remove the active class from all tab links
-    tabLinks = document.getElementsByClassName("tab-links");
-    for (i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].classList.remove("active-link");
-    }
-
-    // Show the selected tab content and add the active class to the clicked tab link
-    document.getElementById(tabName).style.display = "block";
-    event.currentTarget.classList.add("active-link");
-}
-
-// By default, display the first tab content
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("skills").style.display = "block";
-});
-
+<scrip>
 
 </script>
 </body>

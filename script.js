@@ -112,22 +112,6 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 };
 
-/*=====swiper=======*/
-
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    grabCursor: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
 
 /*======= dark light mode =====*/
 const darkModeIcon = document.querySelector('#darkMode-icon');
@@ -157,4 +141,18 @@ ScrollReveal().reveal('.home-content h1, .about-img img', {
 });
 ScrollReveal().reveal('.home-content h3, .home-content p .about-content', {
     origin: 'right'
+});
+
+var swiper = new Swiper('.mySwiper', {
+    loop: true,  // Enable looping
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        slidesPerView: 1,  // Display 1 slide at a time
+        spaceBetween: 30   // Add space between slides if needed
+    },
 });
