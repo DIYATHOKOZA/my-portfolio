@@ -308,9 +308,10 @@ body{
 /* ====== Document Section ====== */
 .Documents-container {
     display: flex;
+    margin: 15px;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     padding: 10rem 2rem;
     background-color: #333;
 }
@@ -319,7 +320,7 @@ body{
     font-size: 3rem;
     text-transform: uppercase;
     color: #ff004f;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     font-weight: 600;
 }
 
