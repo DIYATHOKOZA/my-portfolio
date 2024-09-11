@@ -142,27 +142,16 @@ ScrollReveal().reveal('.home-content h1, .about-img img', {
 ScrollReveal().reveal('.home-content h3, .home-content p .about-content', {
     origin: 'right'
 });
-document.addEventListener('DOMContentLoaded', function () {
 var swiper = new Swiper('.mySwiper', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,  // Enable looping
+    slidesPerView: 'auto',  // Auto-adjust slides to show all documents
+    spaceBetween: 30,  // Add space between slides (optional)
+    autoHeight: true,  // Auto adjust height based on content
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        slidesPerView: 1,  // Display 1 slide at a time
-        spaceBetween: 30   // Add space between slides if needed
-    },
 });
-});
-// Custom pagination control
-document.querySelectorAll('.custom-pagination-btn').forEach(button => {
-    button.addEventListener('click', function () {
-      var slideIndex = this.getAttribute('data-slide');
-      swiper.slideTo(slideIndex); // Slide to the corresponding index
-    });
-  });

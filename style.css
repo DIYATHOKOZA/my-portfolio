@@ -339,29 +339,42 @@ body{
 
 .Document-box {
     position: relative;
-    overflow: hidden;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; 
 
+}
+.Document-content {
+    flex-wrap: nowrap;
+    overflow: visible; /* Ensure content is not cut off */
+}
 .Document-content .Document-slide {
-    display: flex;
+    min-width: 250px;
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
     align-items: center;
     flex-direction: column;
     background-color: #f8f9fa;
-    border-radius: 2rem;
+    border-radius: 10px;
+    border: 2px solid #ddd;
     box-shadow: 0 .1rem .5rem rgba(0, 0, 0, 0.1);
     padding: 5rem 3rem;
     margin-bottom: 2rem;
     transition: all 0.3s ease;
+    width: calc(100% / 3 - 4rem);
+    box-sizing: border-box;
 }
 
 .Document-slide h3 {
-    font-size: 5rem;
+    font-size: 2rem;
     color: #fd0e42;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 }
 
 .Document-slide .Document-slide-link {
-    font-size: 5rem;
+    font-size: 1rem;
     color: #007bff;
     text-decoration: none;
     font-weight: 500;
@@ -386,50 +399,18 @@ body{
     margin-bottom: 1.5rem;
 }
 
-/* Swiper navigation buttons */
-.swiper-button-next,
-.swiper-button-prev {
-    color: #007bff;
-    width: 12rem;
-    height: 12rem;
-    background: #fff;
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-    font-size: 4rem;
-}
-
-/* Swiper pagination */
-.swiper-pagination-bullet {
-    background: rgba(0, 0, 0, .8);
-    opacity: 0.7;
-}
-
-.swiper-pagination-bullet-active {
-    background: #007bff;
-    opacity: 2;
-}
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .swiper-button-next,
     .swiper-button-prev {
-        width: 3rem;                /* Smaller size for smaller screens */
+        width: 3rem; /* Smaller size for smaller screens */
         height: 3rem;
-        font-size: 1.5rem;          /* Smaller icon size for smaller screens */
+        font-size: 1.5rem;/* Smaller icon size for smaller screens */
+    }
+}
+@media (max-width: 480px) {
+    .Document-content .Document-slide {
+        width: 100%; /* Full width on extra small screens */
     }
 }
 /*---------about---------*/
