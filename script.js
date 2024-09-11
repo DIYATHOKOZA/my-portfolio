@@ -142,8 +142,10 @@ ScrollReveal().reveal('.home-content h1, .about-img img', {
 ScrollReveal().reveal('.home-content h3, .home-content p .about-content', {
     origin: 'right'
 });
-
+document.addEventListener('DOMContentLoaded', function () {
 var swiper = new Swiper('.mySwiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
     loop: true,  // Enable looping
     navigation: {
         nextEl: '.swiper-button-next',
@@ -156,3 +158,11 @@ var swiper = new Swiper('.mySwiper', {
         spaceBetween: 30   // Add space between slides if needed
     },
 });
+});
+// Custom pagination control
+document.querySelectorAll('.custom-pagination-btn').forEach(button => {
+    button.addEventListener('click', function () {
+      var slideIndex = this.getAttribute('data-slide');
+      swiper.slideTo(slideIndex); // Slide to the corresponding index
+    });
+  });
