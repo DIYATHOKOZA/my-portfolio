@@ -221,7 +221,28 @@ if (darkModeIcon) {
     darkModeIcon.addEventListener('click', () => {
         darkModeIcon.classList.toggle('bx-sun');
         document.body.classList.toggle('dark-mode');
+        
     });
+  // Check user's saved preference and apply it on page load
+window.addEventListener("load", () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+});
+  // Switch between moon and sun icon on toggle
+darkModeIcon.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    
+    if (document.body.classList.contains("dark-mode")) {
+        darkModeIcon.classList.replace('bx-moon', 'bx-sun');
+        localStorage.setItem("theme", "dark");
+    } else {
+        darkModeIcon.classList.replace('bx-sun', 'bx-moon');
+        localStorage.setItem("theme", "light");
+    }
+});
+
 }
 
 /*======== scroll reveal ====*/

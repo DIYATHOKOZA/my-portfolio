@@ -120,7 +120,12 @@ body{
     color: var(--text-color); 
     display: none;
 }
-
+/* Responsive Navbar for mobile */
+#menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+}
 /* Home section styling */
 .home {
     background-color: black; /* Light background color */
@@ -307,11 +312,12 @@ body{
 }
 /* ====== Document Section ====== */
 .Documents-container {
+    position: relative;
     display: flex;
     margin: 15px;
     align-items: center;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     padding: 10rem 2rem;
     background-color: #333;
 }
@@ -474,7 +480,6 @@ body{
     margin: 10px 0 0px;
     font-size: 18px;
     flex-wrap: wrap;
-    
 }
 .tab-links{
     flex: 1rem;
@@ -483,8 +488,7 @@ body{
     font-size: 30px;
     font-weight: 100;
     cursor: pointer;
-    position: relative;
-    
+    position: relative;   
 }
 .tab-links::after{
     content: '';
@@ -503,7 +507,6 @@ body{
     list-style:none;
     margin: 0px 0;
 }
-
 .tab-contents ul li span{
     display: inline-block;
     color: #b54769;
@@ -531,7 +534,6 @@ body{
     text-align: center; /* Center-align the content */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
-
 .skills-grid li i {
     font-size: 24px; /* Icon size */
     margin-bottom: 10px; /* Space below the icon */
