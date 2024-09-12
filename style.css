@@ -33,6 +33,7 @@ body{
     background: #080808;
     color: #fff;
 }
+
 .header {
     position:sticky;
     justify-content: space-between;
@@ -746,10 +747,10 @@ body{
     box-sizing: border-box;
     flex: 1 1 calc(33.333% - 40px);
     background-color: #fff;
-    padding: 5px;
+    padding: 15px;
     flex-direction: column;
-    margin: 10px auto; /* Centering items */
-    border-radius: 8px;
+    margin: 20px auto; /* Centering items */
+    border-radius: 10px;
     text-align: center;
     border: 1px solid #ababab;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
@@ -783,7 +784,6 @@ body{
     background-color: #4CAF50;
     color: #fff;
     border-radius: 5px;
-    text-decoration: none;
   }
   .project-item a:hover {
     background-color: #45a049;
@@ -794,6 +794,11 @@ body{
 }
 .project-item:hover i {
     transform: scale(1.2); /* Enlarge icon on hover */
+}
+.portfolio-layer {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
 }
   /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -808,7 +813,9 @@ body{
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .project-item {
-      flex: 1 1 calc(50% - 40px);
+        min-height: auto;
+        margin: 10px;
+      flex: 1 1 calc(40% - 40px);
     }
   }
   
